@@ -9,45 +9,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-</head>
-
-/* --- BRAND JPEG LOGO MATRIX --- */
-.logo-brand {
-    display: inline-block;
-    text-decoration: none;
-    transition: var(--transition-smooth);
-}
-
-.logo-brand:hover {
-    opacity: 0.85;
-}
-
-/* Adjust height to fit perfectly inside your 15px blurred sticky header */
-.header-logo-img {
-    height: 45px; 
-    width: auto;
-    display: block;
-    object-fit: contain;
-}
-
-/* Footer layout containment */
-.footer-logo-wrapper {
-    margin-bottom: 20px;
-}
-
-.footer-logo-img {
-    height: 60px;
-    width: auto;
-    display: block;
-    object-fit: contain;
-}
-
-/* Mobile Responsive Optimization */
-@media (max-width: 768px) {
-    .header-logo-img {
-        height: 38px;
+    <style>
+    /* --- BRAND JPEG LOGO MATRIX --- */
+    .logo-brand {
+        display: inline-block;
+        text-decoration: none;
+        transition: var(--transition-smooth);
     }
-}
+
+    .logo-brand:hover {
+        opacity: 0.85;
+    }
+
+    /* Adjust height to fit perfectly inside your 15px blurred sticky header */
+    .header-logo-img {
+        height: 45px; 
+        width: auto;
+        display: block;
+        object-fit: contain;
+    }
+
+    /* Footer layout containment */
+    .footer-logo-wrapper {
+        margin-bottom: 20px;
+    }
+
+    .footer-logo-img {
+        height: 60px;
+        width: auto;
+        display: block;
+        object-fit: contain;
+    }
+
+    /* Mobile Responsive Optimization */
+    @media (max-width: 768px) {
+        .header-logo-img {
+            height: 38px;
+        }
+    }
+    </style>
+</head>
 
 <body>
 
@@ -332,9 +333,7 @@
         </div>
         <div class="footer-bottom">
           <div class="footer-info">
-    <div class="footer-logo-wrapper">
-        <img src="images/ffpi_logo2.png" alt="FPPI Logo" class="footer-logo-img">
-    </div>
+    
     <p class="footer-tagline">Fashion Photographers of the Philippines, Inc.</p>
     <p class="footer-desc">An association established to bridge and uplift the process of development of textile, craft, and fashion as a form of art and science.</p>
 </div>
