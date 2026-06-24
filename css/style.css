@@ -274,6 +274,24 @@ body {
     transform: scale(1.2);
 }
 
+.responsive-placeholder-img {
+    /* 1. Force the image to span the exact size of its parent container */
+    width: 100%;
+    height: 100%;
+
+    /* 2. Magic rule: maintains aspect ratio and crops cleanly from the center */
+    object-fit: cover;
+    object-position: center;
+
+    /* 3. Layout fix: removes the default inline bottom margin/gap standard images have */
+    display: block;
+
+    /* 4. Optional Performance/UX Enhancements */
+    transition: opacity 0.3s ease-in-out; /* Smooth fade-in if you lazy-load images */
+    font-style: italic;                  /* Styles the alt text nicely if image fails to load */
+    background-color: #f0f0f0;           /* Clean placeholder color while image is downloading */
+}
+
 .scroll-indicator {
     position: absolute;
     bottom: 30px;
